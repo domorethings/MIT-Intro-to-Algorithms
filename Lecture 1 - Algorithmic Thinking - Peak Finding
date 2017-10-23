@@ -25,4 +25,38 @@ Look at all n/2 positions...
   else (n/2) position is a peak.
     (^Here, we argue that the algorithm is correct)
                            
-
+ T(n) = T(n/2) + Θ(1) 
+      Base Case: T(1) = Θ(1)
+      T(n) = Θ(1) + ... Θ(1) = Θ(log(sub2)(n)))
+             \_____________/
+             This section is: log(sub2)n times 
+             
+TWO-DIMENSIONAL VERSION
+    [ ][c][ ][ ]
+    [b][a][d][ ]  n rows
+    [ ][e][ ][ ] 
+      m columns 
+      
+  ATTEMPT #1: GREEDY ASCENT ALGORITHM
+  a is a 2-D peak iff a >= b, a >= c, a >= d, a >= e.
+  Time Complexity: Θ(nm) complexity
+    Θ(n^2) if m = n 
+    
+ ATTEMPT #2
+ Pick middle column j = m/2 
+ Find global max on column j at (i, j) 
+ Compare (i, j-i), (i,j), (i + j+1) 
+ Pick left columns if (i, j-1) > (i, j)
+  (Similarly for the right)
+  
+ If (i, j) >= (i, j-1), (i + j) ===> (i, j) is a 2-D Peak
+ - Solves the problem with half the number of columns
+ - When you have a single column, find the global max <--- DONE!
+ 
+ T(n, m) = T(n, m/2) + Θ(n) + Θ(n)      (Θ(n) is the MAX)
+ T(n, 1) = Θ(n)
+ T(n, m) = Θ(n) + ... + Θ(n) 
+    \/
+     Θ(nlog(sub2)m)
+ 
+    
