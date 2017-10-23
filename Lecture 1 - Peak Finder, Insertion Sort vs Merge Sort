@@ -1,0 +1,35 @@
+Peak Finder
+One-Dimensional Case: 
+[[a][b][c][d][e][f][g][h][i]]
+  1  2  3  4  5  6  7  8  9
+
+CONDITIONS:
+a - i are numbers
+Example #1: Position 2 is the peak iff b >= a and b >= c.
+Example #2: Position 3 is the peak iff c >= b and c >= d. 
+"Look to your left, then look to your right, see if you're equal"
+
+1st way/Straightforward Algorithm
+Start from the left [[1][2][n/2][n-1][n]]
+                           /\
+                           This might be the peak. Look at n/2 element
+                           Worst complexity here is Θn: Reasoning? "We are looking at all N elements"
+
+Review of Lecture 1: 
+Insertion Sort: A sequence of numbers (a1, a2, ... , an)
+A permutation reordering... (a'(sub1), a'(sub2), a'(sub3), a'(subn) such that a'1 <= a'2 <= a'n.
+
+The numbers we wish to sort are the keys. Conceptually, a sequence, but input comes in form of an array.
+
+INSERTION SORT: Efficient in sorting small number of elements.
+  c(sub1)n^2 to sort n items, where c1 is a constant that does NOT DEPEND on n.
+  
+REGARDING CONSTANT FACTORS:
+- Typically insertion sort has a smaller constant factor, so that c(sub1) < c(sub2).
+- What about them constant factors? CONSTANT FACTORS have LESS IMPACT than THE DEPENDENCE ON THE INPUT SIZE N IMPACT ON RUN SPEED.
+
+MERGE SORT: c(sub2)n(lgn) to sort n items. lgn means log(sub2)(n).
+  c(sub2) is another constant that does not depend on n.
+
+conclusion: Merge sort is ALWAYS FASTER NO MATTER HOW SMALL c(sub1) is than c(sub2), there's always a crossover point where merge sort 
+will become FASTER than insertion sort. 
