@@ -1,3 +1,7 @@
 Review of Lecture 1: 
 Insertion Sort: A sequence of numbers (a1, a2, ... , an)
 A permutation reordering... (a'1, a'2, a'3, a'n) such that a'1 <= a'2 <= a'n.
+
+The numbers we wish to sort are the keys. Conceptually, a sequence, but input comes in form of an array.
+
+INSERTION SORT: Efficient in sorting small number of elements.
