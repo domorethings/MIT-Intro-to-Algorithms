@@ -5,3 +5,11 @@ A permutation reordering... (a'1, a'2, a'3, a'n) such that a'1 <= a'2 <= a'n.
 The numbers we wish to sort are the keys. Conceptually, a sequence, but input comes in form of an array.
 
 INSERTION SORT: Efficient in sorting small number of elements.
+  c(sub1)n^2 to sort n items, where c1 is a constant that does NOT DEPEND on n.
+- Typically insertion sort has a smaller constant factor, so that c(sub1) < c(sub2).
+- What about them constant factors? CONSTANT FACTORS have LESS IMPACT than THE DEPENDENCE ON THE INPUT SIZE N IMPACT ON RUN SPEED.
+
+MERGE SORT: c(sub2)n(lgn) to sort n items. lgn means log(sub2)(n).
+  c(sub2) is another constant that does not depend on n.
+
+
