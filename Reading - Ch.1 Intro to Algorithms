@@ -1,0 +1,19 @@
+ALGORITHMS READING (MIT)
+EFFICIENCY 
+insertion sort - c(sub1)n^2 to sort n items, where c(sub1) is a constant that does NOT depend on n.
+merge sort - c(sub2)n(lgn) to sort n items. lgn means log(sub2)n c(sub2) is another constant that does not depend on n.
+
+insertion sort typically has a smaller constant factor, so that has c(sub1) < c(sub2)
+constant factors have LESS IMPACT then DEPENDENCE ON THE INPUT SINZE N IMPACT ON RUN SPEED.
+
+Rewriting insertion sort c(sub1) • n  
+Rewriting merge sort c(sub2)(n) • lgn
+INSERTION = Factor of n (larger) ex: n = 1000
+MERGE = Factor of lgn (smaller) ex: lgn = 10 (for the same n)
+
+CONCLUSION - Merge sort is ALWAYS faster no matter no small c(sub1) is than c(sub2), there's always a crossover point
+where merge sort will always be FASTER. 
+- END-
+
+2.1 Insertion Sort
+INPUT: A sequence of n numbers a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>
