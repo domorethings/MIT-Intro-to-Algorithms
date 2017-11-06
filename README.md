@@ -5,8 +5,4 @@ a repository of notes and guides following MIT's Algorithms
 
 - Find in MIT Algorithms: Breadth First Search, Depth First Search, Binary Search, Trees Insert / Find
     (FROM CtCI)
-- Bit manipulation
-- Singleton Design Pattern
-- Factory Design Pattern
-- Memory - Stack vs heap
-- Big-O time
+- Find resources on: Bit manipulation, Singleton Design Pattern, Factory Design Pattern, Memory - Stack vs heap, Big-O time
